@@ -1,0 +1,2 @@
+# ganymed
+Architectural Kata
