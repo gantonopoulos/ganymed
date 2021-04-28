@@ -1,0 +1,18 @@
+# Title
+General Ticket System Architecture
+
+## Status
+Approved
+
+## Context
+We need an elastic system, that can respond to Customer access spikes. 
+We need a highly testable system  to ensure robustness and quick response to change.
+
+## Decision
+We decided to implement the Ticket System using Micrservice Architecture. This architecture offers high elasticity and fault tolerance and
+we will be able to implement changes to the system at a high rate thanks to its high testability. 
+Ticketing need not be highly performant but rather reliable, so we can get away with the performance issues of a Micrservice architecture.
+Finally we already have a good CI/CD infrastructure which we can leverage to support this transition.
+
+
+## Consequences
