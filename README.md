@@ -6,18 +6,9 @@ Architectural Kata
 
 @startuml 
 !include Doc\Lib\C4_Context.puml
-!include Doc\Lib\\C4_Container.puml
-!include Doc\Lib\\C4_Component.puml
+!include Doc\Lib\C4_Container.puml
+!include Doc\Lib\C4_Component.puml
 
-
-Person(administrator, "Admin", "Administrator user")
-Person(Customer, "Customer", "")
-Person(Expert, "Expert", "")
-Person(Manager, "Manager", "")
-Person(System, "System", "")
-
-Container(reporting, "Reporting System", "", "")
-Container(billing, "Billing System", "", "")
 
 System_Boundary(ticketInput, "Ticket Input"){
     Container(ticketInput1, "Ticket-Input\nMicroservice 1", "", "Handles the ticket creation from the customer")
@@ -33,11 +24,6 @@ System_Boundary(ticketInput, "Ticket Input"){
     
 }
 
-System_Boundary(ticketSystem,"Ticket-Management"){
-    Component(completion, "Completion", "", "Handles ticket completion")
-}
-
-Lay_D(ticketInput,ticketSystem)
 
 SHOW_LEGEND(false)
 @enduml
