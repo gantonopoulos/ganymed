@@ -1,10 +1,9 @@
 ```plantuml
 
 @startuml 
-!include Lib\C4_Context.puml
-!include Lib\C4_Container.puml
-!include Lib\C4_Component.puml
-
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.2.0/C4_Context.puml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.2.0/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.2.0/C4_Component.puml
 
 Person_Ext(customer, "Customer", "A customer of the service with a subscription")
 Person(sysopsExpert,"Expert", "Qualified personnel carrying out repairs on the customer site")
@@ -37,6 +36,10 @@ Rel(ticketing, sysopsManager, "Reads expert data")
 Rel(ticketing, notificationForwarding, "Sends expert assignment notifications")
 
 Rel(manager, reporting, "Requests report generation")
+Rel(reporting, ticketing, "Gets data")
+Rel(reporting, customerProfile, "Gets data")
+Rel(reporting, sysopsManager, "Gets data")
+Rel(reporting, billing, "Gets data")
 
 Rel(sysopsAdmin, sysopsManager, "Uses")
 Rel(sysopsAdmin, billing, "Manages")
