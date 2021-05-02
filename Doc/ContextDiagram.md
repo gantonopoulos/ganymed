@@ -1,9 +1,9 @@
 ```plantuml
 
 @startuml 
-!include Lib\C4_Context.puml
-!include Lib\C4_Container.puml
-!include Lib\C4_Component.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/release/1-0/C4_Context.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/release/1-0/C4_Container.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/release/1-0/C4_Component.puml
 
 
 Person_Ext(customer, "Customer", "A customer of the service with a subscription")
