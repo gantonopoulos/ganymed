@@ -13,18 +13,18 @@ System(customerProfile,"Customer Profile", "Maintains the customer data and acti
 System_Ext(payment, "Payment", "Executes billing mandates")
 Person(sysopsAdmin, "Administrator", "Maintainer of internal system data")
 System_Boundary(billingSystem,"Billing"){
-    Container(billing,"Billing Service","","Maintains contract and billing data and initiates payments periodically")
+    Container(billingService,"Billing Service","","Maintains contract and billing data and initiates payments periodically")
     Container(userApp, "Single-Page Application", "", "Provides the frontend to the administrator")
     ContainerDb(centralDb, "Central Database", "", "Persists all customer, sysops user, survey, contact and billing data")
 }
 
 Rel_D(sysopsAdmin, userApp, "Uses")
-Rel_D(userApp, billing, "Calls")
-Rel_U(reporting, billing, "Makes API call to request data")
-Rel_D(billing, customerProfile, "Gest customer data")
-Rel_L(billing, centralDb, "Accesses")
-Rel_R(billing, payment, "Executes recurring payment")
-Rel_L(payment, billing, "Informs about payment outcome")
+Rel_D(userApp, billingService, "Calls")
+Rel_U(reporting, billingService, "Makes API call to request data")
+Rel_D(billingService, customerProfile, "Gest customer data")
+Rel_L(billingService, centralDb, "Accesses")
+Rel_R(billingService, payment, "Executes recurring payment")
+Rel_L(payment, billingService, "Informs about payment outcome")
 
 
 SHOW_LEGEND(false)
