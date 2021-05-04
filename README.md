@@ -11,5 +11,5 @@ Our overall approach is explained in the [SystemOverview](Doc/Adr/SystemOverview
 To document our solution we employed the C4 Architectural documentation model. We used [PlantUML](https://plantuml.com/) and the [C4 Plant UML stdlib](https://github.com/plantuml-stdlib/C4-PlantUML) to prepare the diagrams.
 
 ## Context Diagram (Level 1)
-[alt text](Doc/Diagrams/1.\ Context/Context.png)
+[alt text](Doc/Diagrams/1_Context/Context.png)
 
