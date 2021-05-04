@@ -3,10 +3,9 @@ Ticket Input Container
 ```plantuml
 
 @startuml 
-!include Lib\C4.puml
-!include Lib\C4_Context.puml
-!include Lib\C4_Container.puml
-!include Lib\C4_Component.puml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.2.0/C4_Context.puml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.2.0/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.2.0/C4_Component.puml
 
 
 Person_Ext(customer, "Customer", "A customer of the service with a subscription")
@@ -35,3 +34,4 @@ Rel_D(Broker, ticketProcessor,"Dequeue and transmit next ticket")
 
 SHOW_LEGEND(false)
 @enduml
+```

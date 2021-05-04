@@ -3,10 +3,9 @@ Ticket Manager Container
 ```plantuml
 
 @startuml 
-!include Lib\C4.puml
-!include Lib\C4_Context.puml
-!include Lib\C4_Container.puml
-!include Lib\C4_Component.puml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.2.0/C4_Context.puml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.2.0/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/v2.2.0/C4_Component.puml
 
 
 Person_Ext(customer, "Customer", "A customer of the service with a subscription")
@@ -19,8 +18,7 @@ System_Boundary(ticketManagement, "Ticket Manager"){
     Container(mobileApp, "Mobile App", "", "Provides the expert access to the ticket and knowledge base systems")
 
     Rel(ticketInput, ticketProcessor, "Sends new tickets")
-    Rel(ticketProcessor,ticketInput, "Responds to ticket")
-    Rel(ticketProcessor, ticketDb, "Uses")
+    Rel(ticketProcessor,ticketInput, "Responds to ticket")    
     Rel(sysopsExpert,mobileApp, "Uses")
 }
 
@@ -31,3 +29,5 @@ Rel(ticketProcessor, notificationForwarding, "Sends expert assignment notificati
 
 SHOW_LEGEND(false)
 @enduml
+
+```
