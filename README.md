@@ -18,6 +18,14 @@ To document our solution we employed the C4 Architectural documentation model. W
         * [Ticket Input Container](#Ticket-Input-Container)
     * [Billing System](#Billing-System)
         * [Billing Container](#Billing-Container)
+    * [Customer Profile System](#Customer-Profile-System)
+    * [Knowledge Base System](#Knowledge-Base-System)
+    * [Notification Forwarding System](#Notification-Forwarding-System)
+        * [Notification Forwarding Container](#Notification-Forwarding-Container)
+    * [Reporting System](#Reporting-System)
+    * [Survey System](#Survey-System)
+        * [Survey Container](#Survey-Container)
+    * [SysOps Maintenance System](#SysOps-Maintenance-System)
     
 
 ## Context Diagram
@@ -40,8 +48,41 @@ Here lies the core of our solution. In the [Ticket System](Doc/Adr/TickectSystem
 
 ![Ticket Input Container](Doc/Diagrams/3_Components/TicketInputContainer/TicketInputContainer.png)
 
-## Billing System
+### Billing System
 ![Billing System](Doc/Diagrams/2_Containers/BillingSystem/BillingSystem.png)
 
-### Billing Container
+#### Billing Container
 ![Billing Container](Doc/Diagrams/3_Components/BillingContainer/BillingContainer.png)
+
+### Customer Profile System
+![Customer Profile](Doc/Diagrams/2_Containers/CustomerProfileSystem/CustomerProfileSystem.png)
+
+### Knowledge Base System
+We decided to move the knowledge base system to a dedicated service with a dedicated database. The rational is explained in the [Knowledge Base Service](Doc/Adr/KnowledgeBaseService.md) ADR.
+
+![Knowledge Base System](Doc/Diagrams/2_Containers/KnowledgeBaseSystem/KnowledgeBaseSystem.png)
+
+### Notification Forwarding System
+
+![Notification Forwarding System](Doc/Diagrams/2_Containers/NotificationSystem/NotificationSystem.png)
+
+#### Notification Forwarding Container
+
+![Notification Forwarding Container](Doc/Diagrams/3_Components/TicketInputContainer/TicketInputContainer.png)
+
+### Reporting System
+
+![Reporting System](Doc/Diagrams/2_Containers/ReportingSystem/reportingSystem.png)
+
+### Survey System
+
+![Survey System](Doc/Diagrams/2_Containers/SurveySystem/SurveySystem.png)
+
+#### Survey Container
+
+![Survey Container](Doc/Diagrams/3_Components/SurveyContainer/SurveyContainer.png)
+
+### SysOps Maintenance System
+
+![SysOps Maintenance System](Doc/Diagrams/2_Containers/SysOpsMaintenanceSystem/SysOpsMaintenanceSystem.png)
+
