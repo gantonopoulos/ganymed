@@ -11,13 +11,13 @@ Our overall approach is explained in the [SystemOverview](Doc/Adr/SystemOverview
 To document our solution we employed the C4 Architectural documentation model. We used [PlantUML](https://plantuml.com/) and the [C4 Plant UML stdlib](https://github.com/plantuml-stdlib/C4-PlantUML) to prepare the diagrams.
 
 # Table of Contents
-* [Context Diagram](context-diagram)
-* [Container/Component Diagrams](container-diagrams)
-    * [Ticket Manager System](Ticket-Manager-System)
-        * [Ticket Processing Container](Ticket-Processing-Container)
-        * [Ticket Input Container](Ticket-Input-Container)
-    * [Billing System](Billing-System)
-        * [Billing Container](Billing-Container)
+* [Context Diagram](#context-diagram)
+* [Container/Component Diagrams](#container-diagrams)
+    * [Ticket Manager System](#Ticket-Manager-System)
+        * [Ticket Processing Container](#Ticket-Processing-Container)
+        * [Ticket Input Container](#Ticket-Input-Container)
+    * [Billing System](#Billing-System)
+        * [Billing Container](#Billing-Container)
     
 
 ## Context Diagram
