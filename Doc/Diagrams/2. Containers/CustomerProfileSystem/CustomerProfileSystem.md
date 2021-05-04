@@ -13,7 +13,7 @@ System(billing, "Billing", "Maintains contract and billing data and initiates pa
 System(survey, "Survey", "Maintains the customer surveys and keeps track of their progress")
 System(ticketManagement, "Ticket Manager", "Handles the problem ticket lifecycle")
 System_Boundary(customerProfile,"Customer Profile"){
-    Container(customerManager, "Customer Maintenance", "", "Exposes an API to manage customer data")
+    Container(customerManager, "Customer Maintenance Service", "", "Manages customer data")
     ContainerDb(centralDb, "Central Database", "", "Persists all customer, sysops user, survey, contact and billing data")
     Container(userApp, "Single-Page Application", "", "Provides the frontend to the customer to manage his subscription data")
 }
