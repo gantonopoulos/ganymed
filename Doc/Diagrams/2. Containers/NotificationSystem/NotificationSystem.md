@@ -1,4 +1,4 @@
-Notification ForwardingSystem
+Notification Forwarding System
 
 ```plantuml
 
@@ -20,7 +20,7 @@ System_Boundary(notificationForwarding,"Notification Forwarding"){
 Rel_U(notificationService, sysopsExpert,"Sends SMS")
 Rel_U(notificationService, customer,"Sends SMS or E-mail")
 Rel_U(survey, notificationService, "Requests pending survey notification to customer")
-Rel_L(ticketManagement, notificationService, "Sends expert assignment notifications")
+Rel_L(ticketManagement, notificationService, "Sends ticket assignment notifications")
 
 SHOW_LEGEND(false)
 @enduml
