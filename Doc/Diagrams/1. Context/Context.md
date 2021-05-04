@@ -41,6 +41,7 @@ Rel_R(notificationForwarding, sysopsExpert, "Sends SMS")
 
 Rel_R(sysopsExpert, knowledgeBase, "Reads and Edits technical articles")
 Rel_U(knowledgeBase, sysopsManager, "Gets author data")
+Rel_U(knowledgeBase, ticketManagement, "Gets ticket data")
 
 Rel_D(customer, ticketManagement, "Enters new problem tickets")
 Rel_D(customer, customerProfile, "Maintains profile, contracts and billing information")
