@@ -68,7 +68,7 @@ We decided to move the knowledge base system to a dedicated service with a dedic
 
 #### Notification Forwarding Container
 
-![Notification Forwarding Container](Doc/Diagrams/3_Components/TicketInputContainer/TicketInputContainer.png)
+![Notification Forwarding Container](Doc/Diagrams/3_Components/NotificationContainer/NotificationContainer.png)
 
 ### Reporting System
 
